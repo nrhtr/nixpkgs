@@ -25363,6 +25363,8 @@ with pkgs;
 
   gatling = callPackage ../servers/http/gatling { };
 
+  genesis = callPackage ../servers/genesis { };
+
   glabels = callPackage ../applications/graphics/glabels { };
 
   nats-server = callPackage ../servers/nats-server { };
