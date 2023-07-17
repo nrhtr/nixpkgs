@@ -15,8 +15,8 @@ stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "the-cold-dark";
     repo = pname;
-    rev = "c9e272af7e6e5742a7e9c534212b849e30e5f5e1";
-    hash = "sha256-L5jHzqknQdHGTCJsgJC666uJaQmQfuGsHGKqyUMIzgE=";
+    rev = "f85ca991893a25d1e06a30b97b36e3c9ce7887b8";
+    hash = "sha256-xUDuVxEUEtcTYZWtNeutLMXsuIgWBFF0N3GEpLmXrd0";
   };
 
   nativeBuildInputs = [
@@ -28,10 +28,6 @@ stdenv.mkDerivation rec {
 
   buildInputs = [
     gdbm
-  ];
-
-  patches = [
-    ./fix-darwin-bind-socket.patch
   ];
 
   postPatch = ''
